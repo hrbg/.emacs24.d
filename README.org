@@ -1,0 +1,2 @@
+This is based on the series of posts by Avdi Grimm [[http://avdi.org/devblog/category/emacs-reboot/][emacs reboot]]
+
