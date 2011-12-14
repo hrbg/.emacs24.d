@@ -6,3 +6,10 @@
 ;; Set up 'custom' system
 (setq custom-file (expand-file-name "emacs-customizations.el" hrbg-emacs-config-dir))
 (load custom-file)
+
+;;
+;; http://avdi.org/devblog/2011/09/10/emacs-reboot-5/
+(setq user-emacs-directory hrbg-emacs-config-dir)
+
+(setq backup-directory-alist
+      (list (cons "." (expand-file-name "backup" user-emacs-directory))))
