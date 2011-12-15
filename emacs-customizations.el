@@ -6,6 +6,7 @@
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
  '(mark-even-if-inactive nil)
+ '(menu-bar-mode nil)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("marmalade" . "http://marmalade-repo.org/packages/"))))
  '(package-enable-at-startup t)
  '(tool-bar-mode nil))
