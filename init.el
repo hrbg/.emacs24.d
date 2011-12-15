@@ -1,15 +1,27 @@
-;; http://avdi.org/devblog/2011/09/08/emacs-reboot-4-customizing-customization/
-(setq hrbg-emacs-init-file load-file-name)
+; Avdi Grimm's Emacs 24 Configuration
+
+;; Directories and file names
+(setq hrbg-emacs-init-file (or load-file-name buffer-file-name))
 (setq hrbg-emacs-config-dir
       (file-name-directory hrbg-emacs-init-file))
+(setq user-emacs-directory hrbg-emacs-config-dir)
+(setq hrbg-elisp-dir (expand-file-name "elisp" hrbg-emacs-config-dir))
+(setq hrbg-elisp-external-dir
+      (expand-file-name "external" hrbg-elisp-dir))
+(setq hrbg-init-dir
+      (expand-file-name "init.d" hrbg-emacs-config-dir))
+
+;; Load all elisp files in ./init.d
+(if (file-exists-p hrbg-init-dir)
+    (dolist (file (directory-files hrbg-init-dir t "\\.el$"))
+      (load file)))
 
 ;; Set up 'custom' system
 (setq custom-file (expand-file-name "emacs-customizations.el" hrbg-emacs-config-dir))
 (load custom-file)
 
-;;
-;; http://avdi.org/devblog/2011/09/10/emacs-reboot-5/
-(setq user-emacs-directory hrbg-emacs-config-dir)
 
-(setq backup-directory-alist
-      (list (cons "." (expand-file-name "backup" user-emacs-directory))))
+(add-hook 'ruby-mode-hook
+          (lambda () (rvm-activate-corresponding-ruby)))
+
+
