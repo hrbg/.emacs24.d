@@ -4,3 +4,6 @@
 [submodule "elisp/external/rvm.el"]
 	path = elisp/external/rvm.el
 	url = https://github.com/senny/rvm.el.git
+[submodule "elisp/external/color-theme-railscasts"]
+	path = elisp/external/color-theme-railscasts
+	url = https://github.com/olegshaldybin/color-theme-railscasts.git
