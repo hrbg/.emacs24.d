@@ -2,3 +2,5 @@
 /secrets.el
 /elpa
 /.smex-items
+/url/cookies
+/init.d/ffip.el
