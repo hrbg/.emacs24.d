@@ -10,3 +10,6 @@
 [submodule "elisp/external/color-theme-solarized"]
 	path = elisp/external/color-theme-solarized
 	url = https://github.com/sellout/emacs-color-theme-solarized.git
+[submodule "elisp/external/flymake-ruby"]
+	path = elisp/external/flymake-ruby
+	url = https://github.com/purcell/flymake-ruby.git
