@@ -13,3 +13,6 @@
 [submodule "elisp/external/flymake-ruby"]
 	path = elisp/external/flymake-ruby
 	url = https://github.com/purcell/flymake-ruby.git
+[submodule "elisp/external/textmate.el"]
+	path = elisp/external/textmate.el
+	url = git://github.com/defunkt/textmate.el.git

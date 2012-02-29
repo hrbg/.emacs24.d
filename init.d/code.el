@@ -28,3 +28,7 @@ region\) apply comment-or-uncomment to the current line"
         (comment-or-uncomment-region (point) (mark))
       (comment-or-uncomment-region (mark) (point)))))
 (global-set-key (kbd "C-/") 'comment-or-uncomment-region-or-line)
+
+
+(require 'yaml-mode)
+   (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))

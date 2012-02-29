@@ -7,10 +7,13 @@
  '(custom-theme-load-path (quote (custom-theme-directory t "/home/hector/.emacs24.d/elisp/external/")))
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
+ '(js-indent-level 2)
  '(mark-even-if-inactive nil)
  '(menu-bar-mode nil)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("marmalade" . "http://marmalade-repo.org/packages/"))))
  '(package-enable-at-startup t)
+ '(safe-local-variable-values (quote ((encoding . utf-8) (whitespace-line-column . 80) (lexical-binding . t))))
+ '(scss-compile-at-save nil)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
